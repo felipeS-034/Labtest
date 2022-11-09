@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Ejercicio 4
  * dadas dos listas de palabras, retorne una unica lista en la cual se encuentren las palabras
@@ -7,10 +8,8 @@
  * ejem:
  * ["rat", "dog", "cat", "parrot", "cat"] y ["cat", "lizard", "rat", "cat"] devolverán ["cat", "rat"]
  */
-
- const palabrasRepetidas = (lista1: string[], lista2:string[]) => {
-  const listaNueva = lista1.filter(element => lista2.includes(element));
-  return listaNueva;
+const palabrasRepetidas = (lista1, lista2) => {
+    const listaNueva = lista1.filter(element => lista2.includes(element));
+    return listaNueva;
 };
-
 console.log(palabrasRepetidas);
